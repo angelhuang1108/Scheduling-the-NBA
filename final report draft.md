@@ -38,6 +38,9 @@ The table below lists each team's home game dates (a) and away game dates (d). T
 | Dallas Mavericks | Nov 03, 07, 15, 17, 19, 23, 27, 28; Dec 25 | Nov 01, 05, 11, 13, 21, 29; Dec 01 |
 | Denver Nuggets | Nov 05, 07, 11, 15, 17, 19, 21; Dec 25 | Nov 01, 03, 13, 23, 27, 28, 29; Dec 01 |
 | Golden State Warriors | Nov 03, 05, 11, 15, 17, 27; Dec 25 | Nov 01, 07, 13, 19, 21, 23, 28, 29; Dec 01 |
+
+| Team | (a) Home Dates | (d) Away Dates |
+|---|---|---|
 | Houston Rockets | Nov 03, 11, 13, 15, 19, 21, 23, 27; Dec 25 | Nov 01, 05, 07, 17, 28, 29; Dec 01 |
 | Los Angeles Lakers | Nov 03, 05, 11, 15, 17, 19; Dec 25 | Nov 01, 07, 13, 21, 23, 27, 28, 29; Dec 01 |
 | Miami Heat | Nov 01, 05, 13, 17, 27, 28, 29; Dec 01 | Nov 03, 07, 11, 15, 19, 21, 23; Dec 25 |
@@ -51,47 +54,93 @@ The table below lists each team's home game dates (a) and away game dates (d). T
 
 Each cell shows the number of times the row team $i$ hosted the column team $j$ at home. A value of 0 indicates no home game between that pair; "—" marks a team against itself.
 
-| Team \ Opp. | ATL | BOS | BKN | CHI | CLE | DAL | DEN | GSW | HOU | LAL | MIA | MIL | NYK | PHI | PHX | TOR |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Atlanta Hawks | — | 1 | 0 | 1 | 0 | 1 | 0 | 1 | 0 | 1 | 1 | 1 | 1 | 0 | 1 | 1 |
-| Boston Celtics | 0 | — | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 1 | 0 | 1 | 1 | 0 |
-| Brooklyn Nets | 1 | 1 | — | 0 | 0 | 1 | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
-| Chicago Bulls | 1 | 1 | 1 | — | 0 | 0 | 1 | 1 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 1 |
-| Cleveland Cavaliers | 1 | 1 | 1 | 1 | — | 0 | 1 | 0 | 1 | 0 | 1 | 1 | 1 | 0 | 0 | 1 |
-| Dallas Mavericks | 0 | 0 | 0 | 1 | 1 | — | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 0 | 1 |
-| Denver Nuggets | 1 | 1 | 1 | 0 | 0 | 0 | — | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 |
-| Golden State Warriors | 0 | 1 | 0 | 0 | 1 | 0 | 1 | — | 1 | 0 | 0 | 1 | 1 | 1 | 0 | 0 |
-| Houston Rockets | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | — | 1 | 0 | 1 | 1 | 1 | 1 | 1 |
-| Los Angeles Lakers | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 1 | 0 | — | 0 | 0 | 1 | 0 | 1 | 1 |
-| Miami Heat | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 1 | 1 | 1 | — | 0 | 1 | 1 | 1 | 0 |
-| Milwaukee Bucks | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | — | 1 | 1 | 1 | 0 |
-| New York Knicks | 0 | 1 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | — | 0 | 0 | 1 |
-| Philadelphia 76ers | 1 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | — | 1 | 1 |
-| Phoenix Suns | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 1 | — | 0 |
-| Toronto Raptors | 0 | 1 | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 1 | — |
+**Opponents ATL – GSW**
+
+| Team \ Opp. | ATL | BOS | BKN | CHI | CLE | DAL | DEN | GSW |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Atlanta Hawks | — | 1 | 0 | 1 | 0 | 1 | 0 | 1 |
+| Boston Celtics | 0 | — | 0 | 0 | 0 | 1 | 0 | 1 |
+| Brooklyn Nets | 1 | 1 | — | 0 | 0 | 1 | 1 | 1 |
+| Chicago Bulls | 1 | 1 | 1 | — | 0 | 0 | 1 | 1 |
+| Cleveland Cavaliers | 1 | 1 | 1 | 1 | — | 0 | 1 | 0 |
+| Dallas Mavericks | 0 | 0 | 0 | 1 | 1 | — | 1 | 1 |
+| Denver Nuggets | 1 | 1 | 1 | 0 | 0 | 0 | — | 0 |
+| Golden State Warriors | 0 | 1 | 0 | 0 | 1 | 0 | 1 | — |
+| Houston Rockets | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| Los Angeles Lakers | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 1 |
+| Miami Heat | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 1 |
+| Milwaukee Bucks | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 0 |
+| New York Knicks | 0 | 1 | 1 | 1 | 0 | 1 | 0 | 0 |
+| Philadelphia 76ers | 1 | 0 | 0 | 1 | 1 | 0 | 0 | 0 |
+| Phoenix Suns | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 |
+| Toronto Raptors | 0 | 1 | 1 | 0 | 0 | 0 | 1 | 1 |
+
+**Opponents HOU – TOR**
+
+| Team \ Opp. | HOU | LAL | MIA | MIL | NYK | PHI | PHX | TOR |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Atlanta Hawks | 0 | 1 | 1 | 1 | 1 | 0 | 1 | 1 |
+| Boston Celtics | 0 | 0 | 1 | 1 | 0 | 1 | 1 | 0 |
+| Brooklyn Nets | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| Chicago Bulls | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 1 |
+| Cleveland Cavaliers | 1 | 0 | 1 | 1 | 1 | 0 | 0 | 1 |
+| Dallas Mavericks | 1 | 1 | 1 | 0 | 0 | 1 | 0 | 1 |
+| Denver Nuggets | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 |
+| Golden State Warriors | 1 | 0 | 0 | 1 | 1 | 1 | 0 | 0 |
+| Houston Rockets | — | 1 | 0 | 1 | 1 | 1 | 1 | 1 |
+| Los Angeles Lakers | 0 | — | 0 | 0 | 1 | 0 | 1 | 1 |
+| Miami Heat | 1 | 1 | — | 0 | 1 | 1 | 1 | 0 |
+| Milwaukee Bucks | 0 | 1 | 1 | — | 1 | 1 | 1 | 0 |
+| New York Knicks | 0 | 1 | 0 | 0 | — | 0 | 0 | 1 |
+| Philadelphia 76ers | 0 | 1 | 0 | 0 | 1 | — | 1 | 1 |
+| Phoenix Suns | 0 | 0 | 0 | 0 | 1 | 1 | — | 0 |
+| Toronto Raptors | 1 | 0 | 1 | 1 | 0 | 0 | 1 | — |
 
 ### (c) Away Matchup Counts — $c^A(i,j)$
 
 Each cell shows the number of times the row team $i$ played away at the column team $j$'s arena.
 
-| Team \ Opp. | ATL | BOS | BKN | CHI | CLE | DAL | DEN | GSW | HOU | LAL | MIA | MIL | NYK | PHI | PHX | TOR |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Atlanta Hawks | — | 0 | 1 | 1 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
-| Boston Celtics | 1 | — | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 1 |
-| Brooklyn Nets | 0 | 0 | — | 1 | 1 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 1 | 0 | 1 | 1 |
-| Chicago Bulls | 1 | 0 | 0 | — | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 0 |
-| Cleveland Cavaliers | 0 | 0 | 0 | 0 | — | 1 | 0 | 1 | 0 | 1 | 0 | 1 | 0 | 1 | 1 | 0 |
-| Dallas Mavericks | 1 | 1 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 0 |
-| Denver Nuggets | 0 | 0 | 1 | 1 | 1 | 1 | — | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 1 |
-| Golden State Warriors | 1 | 1 | 1 | 1 | 0 | 1 | 0 | — | 0 | 1 | 1 | 0 | 0 | 0 | 1 | 1 |
-| Houston Rockets | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | — | 0 | 1 | 0 | 0 | 0 | 0 | 1 |
-| Los Angeles Lakers | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | — | 1 | 1 | 1 | 1 | 0 | 0 |
-| Miami Heat | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 0 | 0 | 0 | — | 1 | 0 | 0 | 0 | 1 |
-| Milwaukee Bucks | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 1 | 1 | 0 | 0 | — | 0 | 0 | 0 | 1 |
-| New York Knicks | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | — | 1 | 1 | 0 |
-| Philadelphia 76ers | 0 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | — | 1 | 0 |
-| Phoenix Suns | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 0 | 1 | — | 1 |
-| Toronto Raptors | 1 | 0 | 0 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 0 | 0 | 1 | 1 | 0 | — |
+**Opponents ATL – GSW**
+
+| Team \ Opp. | ATL | BOS | BKN | CHI | CLE | DAL | DEN | GSW |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Atlanta Hawks | — | 0 | 1 | 1 | 1 | 0 | 1 | 0 |
+| Boston Celtics | 1 | — | 1 | 1 | 1 | 0 | 1 | 1 |
+| Brooklyn Nets | 0 | 0 | — | 1 | 1 | 0 | 1 | 0 |
+| Chicago Bulls | 1 | 0 | 0 | — | 1 | 1 | 0 | 0 |
+| Cleveland Cavaliers | 0 | 0 | 0 | 0 | — | 1 | 0 | 1 |
+| Dallas Mavericks | 1 | 1 | 1 | 0 | 0 | — | 0 | 0 |
+| Denver Nuggets | 0 | 0 | 1 | 1 | 1 | 1 | — | 1 |
+| Golden State Warriors | 1 | 1 | 1 | 1 | 0 | 1 | 0 | — |
+| Houston Rockets | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 1 |
+| Los Angeles Lakers | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 0 |
+| Miami Heat | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
+| Milwaukee Bucks | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 1 |
+| New York Knicks | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 1 |
+| Philadelphia 76ers | 0 | 1 | 1 | 0 | 0 | 1 | 1 | 1 |
+| Phoenix Suns | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Toronto Raptors | 1 | 0 | 0 | 1 | 1 | 1 | 0 | 0 |
+
+**Opponents HOU – TOR**
+
+| Team \ Opp. | HOU | LAL | MIA | MIL | NYK | PHI | PHX | TOR |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Atlanta Hawks | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Boston Celtics | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 1 |
+| Brooklyn Nets | 1 | 1 | 0 | 1 | 1 | 0 | 1 | 1 |
+| Chicago Bulls | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 0 |
+| Cleveland Cavaliers | 0 | 1 | 0 | 1 | 0 | 1 | 1 | 0 |
+| Dallas Mavericks | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 0 |
+| Denver Nuggets | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 1 |
+| Golden State Warriors | 0 | 1 | 1 | 0 | 0 | 0 | 1 | 1 |
+| Houston Rockets | — | 0 | 1 | 0 | 0 | 0 | 0 | 1 |
+| Los Angeles Lakers | 1 | — | 1 | 1 | 1 | 1 | 0 | 0 |
+| Miami Heat | 0 | 0 | — | 1 | 0 | 0 | 0 | 1 |
+| Milwaukee Bucks | 1 | 0 | 0 | — | 0 | 0 | 0 | 1 |
+| New York Knicks | 1 | 1 | 1 | 1 | — | 1 | 1 | 0 |
+| Philadelphia 76ers | 1 | 0 | 1 | 1 | 0 | — | 1 | 0 |
+| Phoenix Suns | 1 | 1 | 1 | 1 | 0 | 1 | — | 1 |
+| Toronto Raptors | 1 | 1 | 0 | 0 | 1 | 1 | 0 | — |
 
 ---
 
